@@ -123,34 +123,47 @@ body {
 }
 /* line 53, ../sass/style.scss */
 .menu ul li a:hover {
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  text-shadow: 0 0 2em black;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 .gallery {
   padding: 4em 2em;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 64, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 .gallery li {
   float: left;
   width: 25%;
   padding: 0 .5em;
   box-sizing: border-box;
 }
-/* line 69, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .gallery li img {
   width: 100%;
   -moz-box-shadow: 0.2em 0.2em 0.5em #4d4d4d;
   -webkit-box-shadow: 0.2em 0.2em 0.5em #4d4d4d;
   box-shadow: 0.2em 0.2em 0.5em #4d4d4d;
+  -moz-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.2s ease;
+  -webkit-transition-delay: 0s;
+  transition: all 0.2s ease 0s;
+}
+/* line 74, ../sass/style.scss */
+.gallery li img:hover {
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-/* line 79, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .gradient {
   border: 1px solid white;
   padding: .5em;
@@ -167,10 +180,56 @@ body {
   -webkit-transition: all 1s ease;
   -webkit-transition-delay: 0s;
   transition: all 1s ease 0s;
+  margin-bottom: 1em;
 }
-/* line 91, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 .gradient:hover {
   border: 1px solid #006666;
   color: black;
   text-shadow: 0 0.02em white;
+}
+
+/* line 105, ../sass/style.scss */
+.animation {
+  padding: .5em;
+  font-size: 4em;
+  border: 1px solid #eeeeee;
+  margin-bottom: 1em;
+}
+@-moz-keyframes warning {
+  0% {
+    text-shadow: 0 0 1em black;
+  }
+  50% {
+    text-shadow: 0 0 1.5em red;
+  }
+  100% {
+    text-shadow: 0 0 1em black;
+  }
+}
+@-webkit-keyframes warning {
+  0% {
+    text-shadow: 0 0 1em black;
+  }
+  50% {
+    text-shadow: 0 0 1.5em red;
+  }
+  100% {
+    text-shadow: 0 0 1em black;
+  }
+}
+@keyframes warning {
+  0% {
+    text-shadow: 0 0 1em black;
+  }
+  50% {
+    text-shadow: 0 0 1.5em red;
+  }
+  100% {
+    text-shadow: 0 0 1em black;
+  }
+}
+/* line 122, ../sass/style.scss */
+.animation p {
+  /*@include animation(warning 1s infinite ease-in);	*/
 }
