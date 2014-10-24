@@ -62,3 +62,115 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 6, ../sass/style.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 62.5%;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  color: black;
+  max-width: 100em;
+  /*@include box-shadow(inset 0 0 4em hsl(180, 100%, 30%));*/
+}
+
+/* line 19, ../sass/style.scss */
+.hero {
+  margin-bottom: 2em;
+}
+/* line 20, ../sass/style.scss */
+.hero h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+  text-shadow: 0.1em 0.1em 0.2em gray;
+  padding: 1em;
+}
+/* line 27, ../sass/style.scss */
+.hero p {
+  padding: 0 2em;
+  font-size: 1.5em;
+  text-align: left;
+  line-height: 1.2;
+  text-shadow: none;
+}
+
+/* line 38, ../sass/style.scss */
+.menu {
+  border: 1px solid #dedede;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 41, ../sass/style.scss */
+.menu ul li {
+  float: left;
+  width: 25%;
+}
+/* line 44, ../sass/style.scss */
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  /*text-align: left;*/
+  padding: 1em;
+  font-size: 2em;
+  color: black;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease;
+  -webkit-transition-delay: 0s;
+  transition: all 0.3s ease 0s;
+}
+/* line 53, ../sass/style.scss */
+.menu ul li a:hover {
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+/* line 62, ../sass/style.scss */
+.gallery {
+  padding: 4em 2em;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 64, ../sass/style.scss */
+.gallery li {
+  float: left;
+  width: 25%;
+  padding: 0 .5em;
+  box-sizing: border-box;
+}
+/* line 69, ../sass/style.scss */
+.gallery li img {
+  width: 100%;
+  -moz-box-shadow: 0.2em 0.2em 0.5em #4d4d4d;
+  -webkit-box-shadow: 0.2em 0.2em 0.5em #4d4d4d;
+  box-shadow: 0.2em 0.2em 0.5em #4d4d4d;
+}
+
+/* line 79, ../sass/style.scss */
+.gradient {
+  border: 1px solid white;
+  padding: .5em;
+  font-size: 4em;
+  text-transform: uppercase;
+  background: linear-gradient(0deg, #00ffff 0%, #00aaff 50%, #00ffff 100%);
+  color: white;
+  text-shadow: 0 0.02em black;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -moz-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  -webkit-transition: all 1s ease;
+  -webkit-transition-delay: 0s;
+  transition: all 1s ease 0s;
+}
+/* line 91, ../sass/style.scss */
+.gradient:hover {
+  border: 1px solid #006666;
+  color: black;
+  text-shadow: 0 0.02em white;
+}
