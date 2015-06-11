@@ -642,12 +642,6 @@ background-size: 40px 40px;*/
 		transform: rotate(10deg);
 	}
 
-	70% {
-		width: 94px;
-		height: 88px;	
-		transform: rotate(10deg);
-	}
-
 	100% {
 		display: none;
 	}
@@ -657,21 +651,31 @@ background-size: 40px 40px;*/
 	0% {
 		top: -139px;
 		left: -157px;
-		/*transform: scale(1);*/
+	}
+
+	20% {
+		top: 36px;
+		left: 30px;
 	}
 
 	40% {
-		top: 36px;
-		left: 30px;
+		transform: rotate(10deg);
 	}
 
 	50% {
-		top: 36px;
-		left: 30px;
+		transform: rotate(0deg);
 	}
 
-	60% {
-		transform: rotate(10deg);
+	70% {
+		transform: rotate(0deg);
+	}
+
+	80% {
+		transform: rotate(0deg);
+	}
+
+	90% {
+		transform: rotate(0deg);
 	}
 
 	100% {
@@ -681,6 +685,10 @@ background-size: 40px 40px;*/
 
 #animations {
 	margin-bottom: 10em;
+
+	section {
+		margin: 3em 0;
+	}
 	.data-processing {
 		background-color: #77C8B2;
 		width: 220px;
@@ -793,7 +801,7 @@ background-size: 40px 40px;*/
 			height: 157px;
 			top: 36px;
 			left: 30px;
-			animation: right-jump 1s ease-in-out infinite;
+			animation: right-jump 2s ease-in-out infinite;
 			transform-origin: bottom left;
 		}
 
@@ -805,7 +813,7 @@ background-size: 40px 40px;*/
 			height: 88px;
 			top: 94px;
 			left: 108px;
-			animation: left-jump 1s ease-in-out infinite;
+			animation: left-jump 2s ease-in-out infinite;
 			transform-origin: bottom right;	
 		}
 

@@ -735,11 +735,6 @@ background-size: 40px 40px;*/
   60% {
     transform: rotate(10deg);
   }
-  70% {
-    width: 94px;
-    height: 88px;
-    transform: rotate(10deg);
-  }
   100% {
     display: none;
   }
@@ -748,28 +743,39 @@ background-size: 40px 40px;*/
   0% {
     top: -139px;
     left: -157px;
-    /*transform: scale(1);*/
+  }
+  20% {
+    top: 36px;
+    left: 30px;
   }
   40% {
-    top: 36px;
-    left: 30px;
+    transform: rotate(10deg);
   }
   50% {
-    top: 36px;
-    left: 30px;
+    transform: rotate(0deg);
   }
-  60% {
-    transform: rotate(10deg);
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(0deg);
   }
   100% {
     display: none;
   }
 }
-/* line 682, ../sass/style.scss */
+/* line 686, ../sass/style.scss */
 #animations {
   margin-bottom: 10em;
 }
-/* line 684, ../sass/style.scss */
+/* line 689, ../sass/style.scss */
+#animations section {
+  margin: 3em 0;
+}
+/* line 692, ../sass/style.scss */
 #animations .data-processing {
   background-color: #77C8B2;
   width: 220px;
@@ -779,7 +785,7 @@ background-size: 40px 40px;*/
   position: relative;
   overflow: hidden;
 }
-/* line 693, ../sass/style.scss */
+/* line 701, ../sass/style.scss */
 #animations .data-processing .paper {
   position: absolute;
   background-image: url("/images/data-assets/paper.png");
@@ -790,7 +796,7 @@ background-size: 40px 40px;*/
   left: 34px;
   animation: top-right-in 2s ease infinite;
 }
-/* line 704, ../sass/style.scss */
+/* line 712, ../sass/style.scss */
 #animations .data-processing .pie {
   position: absolute;
   background-image: url("/images/data-assets/chart.png");
@@ -801,7 +807,7 @@ background-size: 40px 40px;*/
   left: 54px;
   animation: zoom-in 2s ease infinite;
 }
-/* line 715, ../sass/style.scss */
+/* line 723, ../sass/style.scss */
 #animations .data-processing .hand {
   position: absolute;
   background-image: url("/images/data-assets/hand.png");
@@ -812,7 +818,7 @@ background-size: 40px 40px;*/
   left: 138px;
   animation: hand-in 2s ease infinite;
 }
-/* line 727, ../sass/style.scss */
+/* line 735, ../sass/style.scss */
 #animations .typing {
   background-color: #CBADDA;
   width: 220px;
@@ -821,7 +827,7 @@ background-size: 40px 40px;*/
   border-radius: 50%;
   position: relative;
 }
-/* line 735, ../sass/style.scss */
+/* line 743, ../sass/style.scss */
 #animations .typing .typewritter {
   position: absolute;
   background-image: url("/images/typing/typewritter.png");
@@ -832,7 +838,7 @@ background-size: 40px 40px;*/
   left: 38px;
   z-index: 3;
 }
-/* line 746, ../sass/style.scss */
+/* line 754, ../sass/style.scss */
 #animations .typing .handlebar {
   position: absolute;
   background-image: url("/images/typing/handlebar.png");
@@ -844,7 +850,7 @@ background-size: 40px 40px;*/
   z-index: 1;
   animation: handlebar .5s ease-in infinite;
 }
-/* line 758, ../sass/style.scss */
+/* line 766, ../sass/style.scss */
 #animations .typing .paper {
   position: absolute;
   background-image: url("/images/typing/paper.png");
@@ -856,7 +862,7 @@ background-size: 40px 40px;*/
   z-index: 2;
   animation: paper 2s ease-out infinite;
 }
-/* line 770, ../sass/style.scss */
+/* line 778, ../sass/style.scss */
 #animations .typing .shadow {
   position: absolute;
   background-image: url("/images/typing/shadow.png");
@@ -864,7 +870,7 @@ background-size: 40px 40px;*/
   width: 108px;
   height: 15px;
 }
-/* line 779, ../sass/style.scss */
+/* line 787, ../sass/style.scss */
 #animations .mag {
   background-color: #6A9ACE;
   width: 220px;
@@ -874,7 +880,7 @@ background-size: 40px 40px;*/
   position: relative;
   overflow: hidden;
 }
-/* line 788, ../sass/style.scss */
+/* line 796, ../sass/style.scss */
 #animations .mag .magazine {
   position: absolute;
   background-image: url("/images/dissemination-assets/magazine.png");
@@ -883,10 +889,10 @@ background-size: 40px 40px;*/
   height: 157px;
   top: 36px;
   left: 30px;
-  animation: right-jump 1s ease-in-out infinite;
+  animation: right-jump 2s ease-in-out infinite;
   transform-origin: bottom left;
 }
-/* line 800, ../sass/style.scss */
+/* line 808, ../sass/style.scss */
 #animations .mag .picture {
   position: absolute;
   background-image: url("/images/dissemination-assets/pic.png");
@@ -895,10 +901,10 @@ background-size: 40px 40px;*/
   height: 88px;
   top: 94px;
   left: 108px;
-  animation: left-jump 1s ease-in-out infinite;
+  animation: left-jump 2s ease-in-out infinite;
   transform-origin: bottom right;
 }
-/* line 812, ../sass/style.scss */
+/* line 820, ../sass/style.scss */
 #animations .mag .yellow-bar {
   position: absolute;
   background-image: url("/images/dissemination-assets/yellow.png");
@@ -908,7 +914,7 @@ background-size: 40px 40px;*/
   top: 116px;
   left: 166px;
 }
-/* line 822, ../sass/style.scss */
+/* line 830, ../sass/style.scss */
 #animations .mag .blue-bar {
   position: absolute;
   background-image: url("/images/dissemination-assets/blue.png");
