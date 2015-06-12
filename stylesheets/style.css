@@ -1,4 +1,4 @@
-/* line 5, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -707,42 +707,57 @@ background-size: 40px 40px;*/
 }
 @keyframes handlebar {
   0% {
-    left: 20px;
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px);
   }
   50% {
-    left: 30px;
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(0);
   }
   100% {
-    left: 20px;
+    transform: translateX(0);
   }
 }
 @keyframes paper {
   0% {
-    top: 90px;
-  }
-  25% {
-    top: 70px;
+    transform: translateY(0);
   }
   30% {
-    top: 72px;
+    transform: translateY(-10px);
+  }
+  35% {
+    transform: translateY(-8px);
   }
   50% {
-    top: 60px;
+    transform: translateY(-20px);
   }
   55% {
-    top: 65px;
+    transform: translateY(-18px);
   }
-  75% {
-    top: 50px;
+  60% {
+    transform: translateY(-30px);
+  }
+  65% {
+    transform: translateY(-28px);
   }
   80% {
-    top: 55px;
+    transform: translateY(-40px);
+  }
+  85% {
+    transform: translateY(-28px);
   }
   90% {
-    top: 55px;
+    transform: translateY(-45px);
   }
   100% {
-    top: 90px;
+    transform: translateY(0);
   }
 }
 @keyframes left-jump {
@@ -853,20 +868,20 @@ background-size: 40px 40px;*/
     display: none;
   }
 }
-/* line 759, ../sass/style.scss */
+/* line 790, ../sass/style.scss */
 #animations {
   margin-bottom: 10em;
 }
-/* line 762, ../sass/style.scss */
+/* line 793, ../sass/style.scss */
 #animations li {
   float: left;
   width: 33.33%;
 }
-/* line 766, ../sass/style.scss */
+/* line 797, ../sass/style.scss */
 #animations section {
   margin: 3em 0;
 }
-/* line 770, ../sass/style.scss */
+/* line 801, ../sass/style.scss */
 #animations .data-processing {
   background-color: #77C8B2;
   width: 220px;
@@ -876,7 +891,7 @@ background-size: 40px 40px;*/
   position: relative;
   overflow: hidden;
 }
-/* line 779, ../sass/style.scss */
+/* line 810, ../sass/style.scss */
 #animations .data-processing .paper {
   position: absolute;
   background-image: url("/images/data-assets/paper.png");
@@ -887,7 +902,7 @@ background-size: 40px 40px;*/
   left: 34px;
   animation: top-right-in 2s ease infinite;
 }
-/* line 790, ../sass/style.scss */
+/* line 821, ../sass/style.scss */
 #animations .data-processing .pie {
   position: absolute;
   background-image: url("/images/data-assets/chart.png");
@@ -898,7 +913,7 @@ background-size: 40px 40px;*/
   left: 54px;
   animation: zoom-in 2s ease infinite;
 }
-/* line 801, ../sass/style.scss */
+/* line 832, ../sass/style.scss */
 #animations .data-processing .bar {
   position: absolute;
   background-image: url("/images/data-assets/data.png");
@@ -909,7 +924,7 @@ background-size: 40px 40px;*/
   left: 100px;
   animation: zoom-in-bar 2s ease infinite;
 }
-/* line 812, ../sass/style.scss */
+/* line 843, ../sass/style.scss */
 #animations .data-processing .hand {
   position: absolute;
   background-image: url("/images/data-assets/hand.png");
@@ -921,7 +936,7 @@ background-size: 40px 40px;*/
   z-index: 2;
   animation: hand-in 2s ease infinite;
 }
-/* line 825, ../sass/style.scss */
+/* line 856, ../sass/style.scss */
 #animations .typing {
   background-color: #CBADDA;
   width: 220px;
@@ -930,7 +945,7 @@ background-size: 40px 40px;*/
   border-radius: 50%;
   position: relative;
 }
-/* line 833, ../sass/style.scss */
+/* line 864, ../sass/style.scss */
 #animations .typing .typewritter {
   position: absolute;
   background-image: url("/images/typing/typewritter.png");
@@ -941,7 +956,7 @@ background-size: 40px 40px;*/
   left: 38px;
   z-index: 3;
 }
-/* line 844, ../sass/style.scss */
+/* line 875, ../sass/style.scss */
 #animations .typing .handlebar {
   position: absolute;
   background-image: url("/images/typing/handlebar.png");
@@ -951,29 +966,21 @@ background-size: 40px 40px;*/
   top: 108px;
   left: 26px;
   z-index: 1;
-  animation: handlebar .5s ease-in infinite;
+  animation: handlebar 1s ease-out infinite;
 }
-/* line 856, ../sass/style.scss */
+/* line 887, ../sass/style.scss */
 #animations .typing .paper {
   position: absolute;
   background-image: url("/images/typing/paper.png");
   background-size: cover;
   width: 127px;
   height: 106px;
-  top: 50px;
+  top: 85px;
   left: 40px;
   z-index: 2;
   animation: paper 2s ease-out infinite;
 }
-/* line 868, ../sass/style.scss */
-#animations .typing .shadow {
-  position: absolute;
-  background-image: url("/images/typing/shadow.png");
-  background-size: cover;
-  width: 108px;
-  height: 15px;
-}
-/* line 877, ../sass/style.scss */
+/* line 900, ../sass/style.scss */
 #animations .mag {
   background-color: #6A9ACE;
   width: 220px;
@@ -983,7 +990,7 @@ background-size: 40px 40px;*/
   position: relative;
   overflow: hidden;
 }
-/* line 886, ../sass/style.scss */
+/* line 909, ../sass/style.scss */
 #animations .mag .magazine {
   position: absolute;
   background-image: url("/images/dissemination-assets/magazine.png");
@@ -995,7 +1002,7 @@ background-size: 40px 40px;*/
   animation: right-jump 2s ease-in-out infinite;
   transform-origin: bottom left;
 }
-/* line 898, ../sass/style.scss */
+/* line 921, ../sass/style.scss */
 #animations .mag .picture {
   position: absolute;
   background-image: url("/images/dissemination-assets/pic.png");
@@ -1007,7 +1014,7 @@ background-size: 40px 40px;*/
   animation: left-arc 2s ease-in-out infinite;
   transform-origin: bottom right;
 }
-/* line 910, ../sass/style.scss */
+/* line 933, ../sass/style.scss */
 #animations .mag .yellow-bar {
   position: absolute;
   background-image: url("/images/dissemination-assets/yellow.png");
@@ -1018,7 +1025,7 @@ background-size: 40px 40px;*/
   left: 158px;
   animation: bar 2s ease infinite;
 }
-/* line 921, ../sass/style.scss */
+/* line 944, ../sass/style.scss */
 #animations .mag .blue-bar {
   position: absolute;
   background-image: url("/images/dissemination-assets/blue.png");

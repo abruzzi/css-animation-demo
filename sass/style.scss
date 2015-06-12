@@ -570,6 +570,7 @@ background-size: 40px 40px;*/
     left: -196px;
   }
 }
+
 @keyframes zoom-in-bar {
   0% {
     transform: scale(0);
@@ -592,47 +593,76 @@ background-size: 40px 40px;*/
     left: -196px;
   }	
 }
+
 @keyframes handlebar {
 	0% {
-		left: 20px;
+		transform: translateX(0);
+	}
+
+	25% {
+		transform: translateX(10px);
 	}
 
 	50% {
-		left: 30px;
+		transform: translateX(0);
+	}
+
+	75% {
+		transform: translateX(-10px);
+	}
+	
+	80% {
+		transform: translateX(0);
 	}
 
 	100% {
-		left: 20px;
+		transform: translateX(0);
 	}
 }
 
 @keyframes paper {
   0% {
-    top: 90px;
+  	transform: translateY(0);
   }
-  25% {
-    top: 70px;
-  }
+  
   30% {
-    top: 72px;
+  	transform: translateY(-10px);
   }
+
+  35% {
+  	transform: translateY(-8px);	
+  }
+
   50% {
-    top: 60px;
+  	transform: translateY(-20px);
   }
+  
   55% {
-    top: 65px;
+  	transform: translateY(-18px);	
   }
-  75% {
-    top: 50px;
+
+  60% {
+  	transform: translateY(-30px);
   }
+
+  65% {
+  	transform: translateY(-28px);
+  }
+
   80% {
-    top: 55px;
+  	transform: translateY(-40px);
   }
+
+  85% {
+  	transform: translateY(-28px);
+  }
+
   90% {
-    top: 55px;
+  	transform: translateY(-45px);
   }
+
   100% {
-    top: 90px;
+  	transform: translateY(0);
   }
 }
 
@@ -756,6 +786,7 @@ background-size: 40px 40px;*/
 		display: none;
 	}
 }
+
 #animations {
 	margin-bottom: 10em;
 
@@ -850,7 +881,7 @@ background-size: 40px 40px;*/
 			top: 108px;
 			left: 26px;
 			z-index: 1;
-			animation: handlebar .5s ease-in infinite;
+			animation: handlebar 1s ease-out infinite;
 		}
 
 		.paper {
@@ -859,18 +890,10 @@ background-size: 40px 40px;*/
 			background-size: cover;
 			width: 127px;
 			height: 106px;
-			top: 50px;
+			top: 85px;
 			left: 40px;
 			z-index:2;
 			animation: paper 2s ease-out infinite;
-		}
-
-		.shadow{
-			position: absolute;
-			background-image: url('/images/typing/shadow.png');
-			background-size: cover;
-			width: 108px;
-			height: 15px;
 		}
 	}	
 
