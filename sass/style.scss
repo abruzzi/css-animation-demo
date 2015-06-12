@@ -595,20 +595,12 @@ background-size: 40px 40px;*/
 }
 
 @keyframes handlebar {
-	0% {
-		transform: translateX(0);
-	}
-
-	25% {
-		transform: translateX(10px);
-	}
-
-	50% {
-		transform: translateX(0);
-	}
-
-	75% {
+	0%, 20%, 40%, 60% {
 		transform: translateX(-10px);
+	}
+
+	15%, 35%, 55%, 75% {
+		transform: translateX(10px);
 	}
 	
 	80% {
@@ -625,44 +617,90 @@ background-size: 40px 40px;*/
   	transform: translateY(0);
   }
   
-  30% {
-  	transform: translateY(-10px);
+  20% {
+  	transform: translateY(-15px);
   }
 
-  35% {
-  	transform: translateY(-8px);	
+  25% {
+  	transform: translateY(-12px);	
   }
 
-  50% {
-  	transform: translateY(-20px);
+  40% {
+  	transform: translateY(-25px);
   }
   
-  55% {
-  	transform: translateY(-18px);	
+  45% {
+  	transform: translateY(-22px);	
   }
 
   60% {
-  	transform: translateY(-30px);
+  	transform: translateY(-35px);
   }
 
   65% {
-  	transform: translateY(-28px);
+  	transform: translateY(-32px);
   }
 
   80% {
-  	transform: translateY(-40px);
-  }
-
-  85% {
-  	transform: translateY(-28px);
-  }
-
-  90% {
   	transform: translateY(-45px);
   }
 
   100% {
   	transform: translateY(0);
+  }
+}
+
+@keyframes line-s {
+  0%, 5% {
+  	width: 0;
+  }
+
+  20% {
+  	width: 55px;
+  }
+
+  22%, 80% {
+  	width : 50px;
+  }
+	
+  80.001%, 100% {
+  	width: 0;
+  }
+}
+
+@keyframes line-m {
+  0%, 25% {
+  	width: 0;
+  }
+
+  40% {
+  	width: 75px;
+  }
+
+  42%, 80% {
+  	width : 70px;
+  }
+
+  80.001%, 100% {
+  	width : 0;
+  }
+}
+
+@keyframes line-l {
+  0%, 45% {
+  	width: 0;
+  }
+
+  60% {
+  	width: 85px;
+  }
+
+  62%, 80% {
+  	width : 80px;
+  }
+
+  80.001%, 100% {
+  	width : 0;
   }
 }
 
@@ -787,6 +825,9 @@ background-size: 40px 40px;*/
 	}
 }
 
+
+
+
 #animations {
 	margin-bottom: 10em;
 
@@ -881,7 +922,7 @@ background-size: 40px 40px;*/
 			top: 108px;
 			left: 26px;
 			z-index: 1;
-			animation: handlebar 1s ease-out infinite;
+			animation: handlebar 2s ease-out infinite;
 		}
 
 		.paper {
@@ -894,6 +935,28 @@ background-size: 40px 40px;*/
 			left: 40px;
 			z-index:2;
 			animation: paper 2s ease-out infinite;
+		}
+
+		.line {
+			position: absolute;
+			top: 104px;
+			left: 70px;
+			background: #DDD;
+			border-radius: 4px;
+			height: 6px;
+			width: 0;
+			z-index: 3;
+			&.line-1 {
+				animation: line-s 2s ease-out infinite, paper 2s ease-out infinite;
+			}
+			&.line-2 {
+				top: 118px;
+				animation: paper 2s ease-out infinite, line-m 2s ease-out infinite;
+			}
+			&.line-3 {
+				top: 132px;
+				animation: paper 2s ease-out infinite, line-l 2s ease-out infinite;
+			}
 		}
 	}	
 
