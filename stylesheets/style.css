@@ -1,4 +1,4 @@
-/* line 5, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -792,6 +792,21 @@ background-size: 40px 40px;*/
     display: none;
   }
 }
+@keyframes left-arc {
+  0%, 40% {
+    transform: rotate(30deg) translateX(200px);
+  }
+  60% {
+    transform: rotate(-2deg) translateX(-5px);
+  }
+  65% {
+    transform: rotate(0deg) translateX(0px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0px);
+    display: none;
+  }
+}
 @keyframes right-jump {
   0% {
     top: -50px;
@@ -838,20 +853,20 @@ background-size: 40px 40px;*/
     display: none;
   }
 }
-/* line 743, ../sass/style.scss */
+/* line 759, ../sass/style.scss */
 #animations {
   margin-bottom: 10em;
 }
-/* line 746, ../sass/style.scss */
+/* line 762, ../sass/style.scss */
 #animations li {
   float: left;
   width: 33.33%;
 }
-/* line 750, ../sass/style.scss */
+/* line 766, ../sass/style.scss */
 #animations section {
   margin: 3em 0;
 }
-/* line 754, ../sass/style.scss */
+/* line 770, ../sass/style.scss */
 #animations .data-processing {
   background-color: #77C8B2;
   width: 220px;
@@ -861,7 +876,7 @@ background-size: 40px 40px;*/
   position: relative;
   overflow: hidden;
 }
-/* line 763, ../sass/style.scss */
+/* line 779, ../sass/style.scss */
 #animations .data-processing .paper {
   position: absolute;
   background-image: url("/images/data-assets/paper.png");
@@ -872,7 +887,7 @@ background-size: 40px 40px;*/
   left: 34px;
   animation: top-right-in 2s ease infinite;
 }
-/* line 774, ../sass/style.scss */
+/* line 790, ../sass/style.scss */
 #animations .data-processing .pie {
   position: absolute;
   background-image: url("/images/data-assets/chart.png");
@@ -883,7 +898,7 @@ background-size: 40px 40px;*/
   left: 54px;
   animation: zoom-in 2s ease infinite;
 }
-/* line 785, ../sass/style.scss */
+/* line 801, ../sass/style.scss */
 #animations .data-processing .bar {
   position: absolute;
   background-image: url("/images/data-assets/data.png");
@@ -894,7 +909,7 @@ background-size: 40px 40px;*/
   left: 100px;
   animation: zoom-in-bar 2s ease infinite;
 }
-/* line 796, ../sass/style.scss */
+/* line 812, ../sass/style.scss */
 #animations .data-processing .hand {
   position: absolute;
   background-image: url("/images/data-assets/hand.png");
@@ -906,7 +921,7 @@ background-size: 40px 40px;*/
   z-index: 2;
   animation: hand-in 2s ease infinite;
 }
-/* line 809, ../sass/style.scss */
+/* line 825, ../sass/style.scss */
 #animations .typing {
   background-color: #CBADDA;
   width: 220px;
@@ -915,7 +930,7 @@ background-size: 40px 40px;*/
   border-radius: 50%;
   position: relative;
 }
-/* line 817, ../sass/style.scss */
+/* line 833, ../sass/style.scss */
 #animations .typing .typewritter {
   position: absolute;
   background-image: url("/images/typing/typewritter.png");
@@ -926,7 +941,7 @@ background-size: 40px 40px;*/
   left: 38px;
   z-index: 3;
 }
-/* line 828, ../sass/style.scss */
+/* line 844, ../sass/style.scss */
 #animations .typing .handlebar {
   position: absolute;
   background-image: url("/images/typing/handlebar.png");
@@ -938,7 +953,7 @@ background-size: 40px 40px;*/
   z-index: 1;
   animation: handlebar .5s ease-in infinite;
 }
-/* line 840, ../sass/style.scss */
+/* line 856, ../sass/style.scss */
 #animations .typing .paper {
   position: absolute;
   background-image: url("/images/typing/paper.png");
@@ -950,7 +965,7 @@ background-size: 40px 40px;*/
   z-index: 2;
   animation: paper 2s ease-out infinite;
 }
-/* line 852, ../sass/style.scss */
+/* line 868, ../sass/style.scss */
 #animations .typing .shadow {
   position: absolute;
   background-image: url("/images/typing/shadow.png");
@@ -958,7 +973,7 @@ background-size: 40px 40px;*/
   width: 108px;
   height: 15px;
 }
-/* line 861, ../sass/style.scss */
+/* line 877, ../sass/style.scss */
 #animations .mag {
   background-color: #6A9ACE;
   width: 220px;
@@ -968,7 +983,7 @@ background-size: 40px 40px;*/
   position: relative;
   overflow: hidden;
 }
-/* line 870, ../sass/style.scss */
+/* line 886, ../sass/style.scss */
 #animations .mag .magazine {
   position: absolute;
   background-image: url("/images/dissemination-assets/magazine.png");
@@ -980,37 +995,37 @@ background-size: 40px 40px;*/
   animation: right-jump 2s ease-in-out infinite;
   transform-origin: bottom left;
 }
-/* line 882, ../sass/style.scss */
+/* line 898, ../sass/style.scss */
 #animations .mag .picture {
   position: absolute;
   background-image: url("/images/dissemination-assets/pic.png");
   background-size: cover;
   width: 94px;
   height: 88px;
-  top: 94px;
-  left: 108px;
-  animation: left-jump 2s ease-in-out infinite;
+  top: 88px;
+  left: 100px;
+  animation: left-arc 2s ease-in-out infinite;
   transform-origin: bottom right;
 }
-/* line 894, ../sass/style.scss */
+/* line 910, ../sass/style.scss */
 #animations .mag .yellow-bar {
   position: absolute;
   background-image: url("/images/dissemination-assets/yellow.png");
   background-size: cover;
   width: 27px;
   height: 9px;
-  top: 116px;
-  left: 166px;
+  top: 106px;
+  left: 158px;
   animation: bar 2s ease infinite;
 }
-/* line 905, ../sass/style.scss */
+/* line 921, ../sass/style.scss */
 #animations .mag .blue-bar {
   position: absolute;
   background-image: url("/images/dissemination-assets/blue.png");
   background-size: cover;
   width: 25px;
   height: 14px;
-  top: 154px;
-  left: 164px;
+  top: 148px;
+  left: 156px;
   animation: bar 2s ease infinite;
 }
