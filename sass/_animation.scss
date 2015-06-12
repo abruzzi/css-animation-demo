@@ -1,0 +1,187 @@
+
+@keyframes top-right-in {
+  0% {
+    top: -90px;
+    left: 220px;
+  }
+  20% {
+    top: 54px;
+    left: 34px;
+  }
+  30% {
+    top: 54px;
+    left: 34px;
+  }
+  40% {
+    top: 54px;
+    left: 34px;
+  }
+  50% {
+    top: 54px;
+    left: 34px;
+  }
+  60% {
+    top: 54px;
+    left: 34px;
+  }
+  100% {
+    top: 200px;
+    left: -196px;
+  }
+}
+@keyframes hand-in {
+  0% {
+    top: -90px;
+    left: 250px;
+  }
+
+  20% {
+    top: 50px;
+    left: 138px;
+  }
+  30% {
+    top: 50px;
+    left: 138px;
+  }
+  45% {
+    top: 50px;
+    left: 138px; 
+  }
+  60% {
+    top: -70px;
+    left: 220px;    
+  }
+  100% {
+    top: -70px;
+    left: 220px;
+  }
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0);
+  }
+
+  30% {
+   transform: scale(0); 
+  }
+  55% {
+    transform: scale(1);
+  }
+  60% {
+    top: 88px;
+    left: 54px;
+  }
+
+  100% {
+    top: 200px;
+    left: -196px;
+  }
+}
+
+@keyframes handlebar {
+  0% {
+    left: 20px;
+  }
+  50% {
+    left: 30px;
+  }
+  100% {
+    left: 20px;
+  }
+}
+@keyframes paper {
+  0% {
+    top: 90px;
+  }
+  25% {
+    top: 70px;
+  }
+  30% {
+    top: 72px;
+  }
+  50% {
+    top: 60px;
+  }
+  55% {
+    top: 65px;
+  }
+  75% {
+    top: 50px;
+  }
+  80% {
+    top: 55px;
+  }
+  90% {
+    top: 55px;
+  }
+  100% {
+    top: 90px;
+  }
+}
+@keyframes left-jump {
+  0% {
+    top: 100px;
+    left: 260px;
+    transform: rotate(0);
+  }
+  40% {
+    top: 100px;
+    left: 260px;
+    transform: rotate(8deg);
+  }
+  44% {
+    top: 95px;
+    left: 230px;
+    transform: rotate(6deg);
+  }
+  48% {
+    top: 90px;
+    left: 200px;
+    transform: rotate(4deg);
+  }
+  52% {
+    top: 85px;
+    left: 170px;
+    transform: rotate(2deg);
+  }
+  56% {
+    top: 90px;
+    left: 140px;
+    transform: rotate(0deg);
+  }
+  60% {
+    top: 96px;
+    left: 106px;
+    transform: rotate(-3deg);
+  }
+  65% {
+    top: 94px;
+    left: 108px;
+    transform: rotate(0);
+  }
+  100% {
+    top: 94px;
+    left: 108px;
+    display: none;
+  }
+}
+@keyframes right-jump {
+  0% {
+    top: -139px;
+    left: -157px;
+  }
+  20% {
+    top: 36px;
+    left: 30px;
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  100% {
+    display: none;
+  }
+}
