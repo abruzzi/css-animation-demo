@@ -522,58 +522,76 @@ background-size: 40px 40px;*/
 }
 
 @keyframes hand-in {
-	0% {
-		top: -90px;
-		left: 250px;
-	}
+  0% {
+    top: -90px;
+    left: 250px;
+  }
 
-
-	30% {
-		top: 50px;
-		left: 138px;
-	}
-
-	60% {
-		top: 50px;
-		left: 138px;
-	}
-
-	100% {
-		top: -70px;
-		left: 220px;
-	}
+  20% {
+    top: 50px;
+    left: 138px;
+  }
+  30% {
+    top: 50px;
+    left: 138px;
+  }
+  45% {
+    top: 50px;
+    left: 138px; 
+  }
+  60% {
+    top: -70px;
+    left: 220px;    
+  }
+  100% {
+    top: -70px;
+    left: 220px;
+  }
 }
 
 @keyframes zoom-in {
-	0% {
-		transform: scale(0.01);
-	}
+  0% {
+    transform: scale(0);
+  }
 
-	20% {
-		transform: scale(.2);
-	}
-	
-	30% {
-		transform: scale(.3);
-	}
+  30% {
+   transform: scale(0); 
+  }
+  55% {
+    transform: scale(1);
+  }
+  60% {
+    top: 88px;
+    left: 54px;
+  }
 
-	40% {
-		transform: scale(.4);
-	}
-
-	50% {
-		transform: scale(.5);
-	}
-
-	60% {
-		transform: scale(1);
-	}
-
-	100% {
-		transform: scale(0.01);
-	}
+  100% {
+    top: 200px;
+    left: -196px;
+  }
 }
+@keyframes zoom-in-bar {
+  0% {
+    transform: scale(0);
+  }
 
+  30% {
+   transform: scale(0); 
+  }
+
+  55% {
+    transform: scale(1);
+  }
+  60% {
+    top: 60px;
+	left: 100px;
+  }
+
+  100% {
+    top: 200px;
+    left: -196px;
+  }	
+}
 @keyframes handlebar {
 	0% {
 		left: 20px;
@@ -589,37 +607,33 @@ background-size: 40px 40px;*/
 }
 
 @keyframes paper {
-	0% {
-		top: 90px;
-	}
-
-	25% {
-		top: 70px;
-	}
-
-	30% {
-		top: 72px;
-	}
-
-	50% {
-		top: 60px;
-	}
-
-	55% {
-		top: 65px;
-	}
-
-	75% {
-		top: 50px;
-	}
-
-	80% {
-		top: 55px;
-	}
-
-	100% {
-		top: 90px;
-	}
+  0% {
+    top: 90px;
+  }
+  25% {
+    top: 70px;
+  }
+  30% {
+    top: 72px;
+  }
+  50% {
+    top: 60px;
+  }
+  55% {
+    top: 65px;
+  }
+  75% {
+    top: 50px;
+  }
+  80% {
+    top: 55px;
+  }
+  90% {
+    top: 55px;
+  }
+  100% {
+    top: 90px;
+  }
 }
 
 @keyframes left-jump {
@@ -672,30 +686,71 @@ background-size: 40px 40px;*/
 
 @keyframes right-jump {
     0% {
-        top: -139px;
-        left: -157px;
-    }
-    20% {
-        top: 36px;
-        left: 30px;
-    }
-    30% {
-        transform: rotate(10deg);
-    }
-    40% {
+        top: -50px;
+        left: -150px;
         transform: rotate(0deg);
     }
+
+    15% {
+        transform: rotate(-20deg);
+    }
+
+	18% {
+		transform: rotate(-10deg);	
+	}
+
+    20% {
+    	transform: rotate(-3deg);	
+    }
+
+    25% {
+    	top: 36px;
+        left: 30px;
+        transform: rotate(5deg);	
+    }
+
+	30% {
+    	top: 36px;
+        left: 30px;
+        transform: rotate(0deg);		
+	}
     100% {
         display: none;
     }
 }
 
+@keyframes bar {
+	0% {
+		transform: scale(0);
+	}
+
+	80% {
+		transform: scale(0);		
+	}
+
+	90% {
+		transform: scale(1);
+	}
+
+	95% {
+		transform: scale(1);	
+	}
+
+	100% {
+		display: none;
+	}
+}
 #animations {
 	margin-bottom: 10em;
 
+	li {
+		float: left;
+		width: 33.33%;
+	}
 	section {
 		margin: 3em 0;
 	}
+
 	.data-processing {
 		background-color: #77C8B2;
 		width: 220px;
@@ -727,6 +782,17 @@ background-size: 40px 40px;*/
 			animation: zoom-in 2s ease infinite;
 		}
 
+		.bar {
+			position: absolute;
+			background-image: url('/images/data-assets/data.png');
+			background-size: cover;
+			width: 84px;
+			height: 60px;
+			top: 60px;
+			left: 100px;
+			animation: zoom-in-bar 2s ease infinite;
+		}
+
 		.hand {
 			position: absolute;
 			background-image: url('/images/data-assets/hand.png');
@@ -735,6 +801,7 @@ background-size: 40px 40px;*/
 			height: 41px;
 			top: 50px;
 			left: 138px;
+			z-index: 2;
 			animation: hand-in 2s ease infinite;
 		}
 	}
@@ -832,6 +899,7 @@ background-size: 40px 40px;*/
 			height: 9px;
 			top: 116px;
 			left: 166px;
+			animation:  bar 2s ease infinite;
 		}
 
 		.blue-bar {
@@ -842,6 +910,7 @@ background-size: 40px 40px;*/
 			height: 14px;
 			top: 154px;
 			left: 164px;
+			animation:  bar 2s ease infinite;
 		}
 	}
 }
